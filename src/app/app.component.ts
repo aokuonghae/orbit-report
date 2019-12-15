@@ -10,10 +10,11 @@ export class AppComponent {
   title = 'orbit-report';
   sourceList: Satellite[];
   displayList: Satellite[];
-
+  countList: number[];
 
   constructor() {
     this.displayList = this.sourceList;
+    this.countList=[];
     this.sourceList = [];
     let satellitesUrl= 'https://handlers.education.launchcode.org/static/satellites.json';
 
