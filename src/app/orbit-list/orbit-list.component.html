@@ -7,7 +7,7 @@
       <th>Orbit Type</th>
       <th>Launch Date</th>
    </tr>
-   <tr  [class.warning]="lists.shouldShowWarning()"  *ngFor="let lists of satellites">
+   <tr class="zebra-row" [class.warning]="lists.shouldShowWarning()"  *ngFor="let lists of satellites">
        <td>{{lists.name}}</td>
        <td>{{lists.type}}</td>
        <td>{{lists.operational}}</td>
@@ -16,5 +16,5 @@
    </tr>
 </table>
 
-<app-orbit-list [satellites]="displayList"></app-orbit-list>
-<!-- infinite loop starts when this is added -->
+<!-- <app-orbit-list [satellites]="displayList"></app-orbit-list>
+infinite loop starts when this is added -->

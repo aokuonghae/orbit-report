@@ -26,3 +26,10 @@ th, td {
     margin: 5px 10px;
     padding: 6px;
 }
+
+.zebra-row:nth-child(even){
+    background-color: #f9f6f7;
+}
+.zebra-row:nth-child(odd){
+    background-color: #ffd369;
+}
